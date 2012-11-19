@@ -9,7 +9,9 @@
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
 # ... or force ignoredups and ignorespace
-HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoreboth
+export HISTFILESIZE=10000
+export HISTIGNORE="l"
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -24,12 +26,12 @@ export LESS='-QIMR'
 
 function l4
 {
-    find . -name '.git' -prune -o -type f -exec grep --color=auto -i "$1" {} +
+    find . -name '.svn' -prune -o -type f -exec grep --color=auto -i "$1" {} +
 }
 
 function l4e
 {
-    find . -name '.git' -prune -o -type f -exec egrep --color=auto -i "$1" {} +
+    find . -name '.svn' -prune -o -type f -exec egrep --color=auto -i "$1" {} +
 }
 
 function title
