@@ -1,0 +1,39 @@
+! urxvt
+URxvt*buffered: true
+URxvt*cursorBlink: true
+URxvt*underlineColor: blue
+URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+URxvt*depth: 32
+URxvt*borderless: 1
+URxvt*scrollBar: false
+URxvt*loginShell: true
+!!URxvt.intensityStyles: false
+!! Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+!! URxvt*saveLines: 5000
+URxvt*termName: xterm-256color
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: google-chrome
+URxvt.matcher.button: 1
+URxvt.cutchars: "()*,<>[]{}|''"
+
+URxvt*background: black
+URxvt*foreground: #AAAAAA
+
+!! Taken from GNOME Terminal "Linux console" theme.
+*color0:  #000000
+*color8:  #555555
+*color1:  #AA0000
+*color9:  #FF5555
+*color2:  #00AA00
+*color10: #55FF55
+*color3:  #AA5500
+*color11: #FFFF55
+*color4:  #4848FF
+!! *color4: #0000AA
+*color12: #5555FF
+*color5:  #AA00AA
+*color13: #FF55FF
+*color6:  #00AAAA
+*color14: #55FFFF
+*color7:  #AAAAAA
+*color15: #FFFFFF
